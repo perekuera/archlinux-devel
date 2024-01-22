@@ -1,0 +1,11 @@
+{
+    "name": "Archlinux Devel",
+    "dockerComposeFile": "docker-compose.yml",
+    "remoteUser": "devel",
+    "service": "archlinux-devel",
+    "workspaceFolder": "/workspace",
+    "remoteEnv": {
+        "PROJECT_FOLDER": "/workspace",
+        "VISUAL": "code --wait"
+    }
+}

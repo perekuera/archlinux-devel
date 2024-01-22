@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+    archlinux-devel:
+        container_name: archlinux-devel
+        hostname: archdevel
+        build:
+            context: .
+            dockerfile: Dockerfile
+            # args:
+            # UID: "1000"
+            # GID: "1000"
+            # USERNAME: "devel"
+        image: archlinux-devel:beta
+
+    # archlinux-devel:
+    #     container_name: archlinux-devel
+    #     image: archlinux-devel:beta
+    #     volumes:
+    #         - ..:/workspace:cached
+    #     command: sleep infinity
+    #     user: devel
